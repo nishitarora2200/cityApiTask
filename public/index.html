@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="../demo.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./debounce.js"></script>
+</head>
+<body>
+    <div class="container-fluild">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-5">
+            <div class="pos" style="position: absolute;top: 250px;">
+                <form action="/submit" method="POST" autocomplete="off">
+                    <div class="form-group">
+                        <label for="search">Search</label>
+                        <input list="cities" type="text" id="search" name="city" style="width: 450px;" placeholder="enter any city" onkeyup="debounceApi()">
+                        <datalist id="cities">
+                
+                        </datalist>
+                        <button type="submit" class="btn btn-dark">Search</button>
+                    
+                    </div>
+                </form>
+                </div>
+        </div>
+        <div class="col-sm-3"></div>
+
+    </div>
+    
+</div>
+
+
+
+</body>
+</html>
